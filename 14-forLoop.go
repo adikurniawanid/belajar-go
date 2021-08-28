@@ -5,6 +5,9 @@ import "fmt"
 func main() {
 	// loops di golang cuma ada for
 
+	// break untuk menghentikan perulangan
+	// continue untuk skip perulangan ke perulangan selanjutnya
+
 	for angka := 0; angka < 10; angka++ {
 		fmt.Println(angka)
 	}
@@ -17,7 +20,14 @@ func main() {
 
 	// for range untuk array, slice, map
 	for i, value := range slice {
+		if i == 2 {
+			continue
+		}
 		fmt.Println("Index", i, "=", value)
+
+		if i == 3 {
+			break
+		}
 	}
 
 	for _, value := range slice {
