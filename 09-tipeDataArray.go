@@ -3,6 +3,8 @@ package main
 import "fmt"
 
 func main() {
+	//ini array arr := [...]int
+	//ini slice arr := []int
 	var nama [2]string
 	nama[0] = "Adi"
 	nama[1] = "Kurniawan"
@@ -19,7 +21,7 @@ func main() {
 
 	fmt.Println(values)
 
-	var nilai = []int{
+	var nilai = [...]int{
 		2, 3, 4, 5,
 	}
 	fmt.Println(len(nilai))
